@@ -3,10 +3,6 @@
 > [!CAUTION]
 > **This project is entirely vibecoded and should NOT be considered production-ready.**
 >
-> If you use this source, you're genuinely a retard or something 😭
->
-> This is probably riddled with vulnerabilities, and rehosting it will get you clowned on 😭
->
 > This source also probably has an RCE somewhere. idk 🤣 go find it, i don't care.
 
 ## About
