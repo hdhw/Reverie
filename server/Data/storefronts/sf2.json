@@ -1,0 +1,2696 @@
+{
+  "StoreItems": [
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "0QOlT9c5xUuinpfZaoEe8Q,LEUQnDz-k0m-hY-AX3Z9Sg,znNiHfNdTE-szOIAnIWFQg,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Luau Hat (Paradise)",
+        "GiftDropId": 1003000,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Luau Paradise Set",
+        "ItemSetId": 1,
+        "Rarity": 20,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": true,
+      "PurchasableItemId": 1003000,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 500,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 450,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "vDSlMnayzEqWXwT-lkcKSA,NKf5-r2S_0iP0SaO9bjvaw,0WOBGm34H0ySBC10VToa9g,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Luau Shirt (Paradise)",
+        "GiftDropId": 1003001,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Luau Paradise Set",
+        "ItemSetId": 1,
+        "Rarity": 20,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": true,
+      "PurchasableItemId": 1003001,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 500,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 450,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "7aa994d2-6499-4918-ab2a-2531c17e27a7,nPUQvBsxu0mzhQg9YnWEgw,CAqT_iLfQ0qQ-GbIdAsZow,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Luau Dress (Paradise)",
+        "GiftDropId": 1003002,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Luau Paradise Set",
+        "ItemSetId": 1,
+        "Rarity": 20,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": true,
+      "PurchasableItemId": 1003002,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 500,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 450,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "3eb14fcf-5d20-47d3-b991-97808798a225,yXZO-donI0SHB9-TT0jUdw,5ekjxLQZwUm7-iXJ0bYSiQ,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Luau Headband (Paradise)",
+        "GiftDropId": 1003003,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Luau Paradise Set",
+        "ItemSetId": 1,
+        "Rarity": 20,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": true,
+      "PurchasableItemId": 1003003,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 500,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 450,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "9441142e-981c-4f35-8f9d-b4b3604da9a4,F0o3eeWbCUaUAGRUdI0z7A",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Floral Cape (Midsummer)",
+        "GiftDropId": 1003004,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Midsummer Floral Cape Set",
+        "ItemSetId": 2,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": true,
+      "PurchasableItemId": 1003004,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "9441142e-981c-4f35-8f9d-b4b3604da9a4,07qFFGmwm0qmIikemncBkQ",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Floral Cape (Midsummer Blue)",
+        "GiftDropId": 1003005,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Midsummer Floral Cape Set",
+        "ItemSetId": 2,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": true,
+      "PurchasableItemId": 1003005,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "9441142e-981c-4f35-8f9d-b4b3604da9a4,hRl4UTGoBUi5dmu0f4s76A",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Floral Cape (Midsummer Verdant)",
+        "GiftDropId": 1003006,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Midsummer Floral Cape Set",
+        "ItemSetId": 2,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": true,
+      "PurchasableItemId": 1003006,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "9441142e-981c-4f35-8f9d-b4b3604da9a4,qvK8xgbyuE-dW3--Ku-mvw",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Floral Cape (Midsummer Obsidian)",
+        "GiftDropId": 1003007,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Midsummer Floral Cape Set",
+        "ItemSetId": 2,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": true,
+      "PurchasableItemId": 1003007,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "f41653f9-ae02-443c-aaf4-1c6f4e49035d,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Flower Swimsuit (Yellow)",
+        "GiftDropId": 1003008,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Flower Swimsuit Set",
+        "ItemSetId": 3,
+        "Rarity": 30,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": true,
+      "PurchasableItemId": 1003008,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 675,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "f41653f9-ae02-443c-aaf4-1c6f4e49035d,cf515c87-3c0a-4443-9f63-5ea1bdbaa61a,3248a3ec-50d1-4c0a-96ae-25eb9d8ed622,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Flower Swimsuit (White)",
+        "GiftDropId": 1003009,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Flower Swimsuit Set",
+        "ItemSetId": 3,
+        "Rarity": 30,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": true,
+      "PurchasableItemId": 1003009,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 675,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "f41653f9-ae02-443c-aaf4-1c6f4e49035d,27680277-aec1-41be-a476-9f51cf775580,3248a3ec-50d1-4c0a-96ae-25eb9d8ed622,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Flower Swimsuit (Purple)",
+        "GiftDropId": 1003010,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Flower Swimsuit Set",
+        "ItemSetId": 3,
+        "Rarity": 30,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": true,
+      "PurchasableItemId": 1003010,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 675,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "f41653f9-ae02-443c-aaf4-1c6f4e49035d,5a96ac4d-03c3-4214-9dcb-c2044ff28f2e,3248a3ec-50d1-4c0a-96ae-25eb9d8ed622,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Flower Swimsuit (Grey)",
+        "GiftDropId": 1003011,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Flower Swimsuit Set",
+        "ItemSetId": 3,
+        "Rarity": 30,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": true,
+      "PurchasableItemId": 1003011,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 675,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "f15d81c8-3d19-4bbe-87c0-1144aaa4138a,M16XTvLPKUWRpiAspgsatQ,tmaPvkx3BUOZ3nsl2E0oRw,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Fae Horns (Summer)",
+        "GiftDropId": 1003012,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Summer Fae Set",
+        "ItemSetId": 4,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": true,
+      "PurchasableItemId": 1003012,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "8595c7b2-4d1c-4eae-af9a-8180d475d931,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Dryad Dress (Summer)",
+        "GiftDropId": 1003013,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Summer Fae Set",
+        "ItemSetId": 4,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": true,
+      "PurchasableItemId": 1003013,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "UcPo9SsF3EGTCBB2J-Efdw,pAlEt5sqD0mKgFd_0b7RgA",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Floral Headphones (Blossom)",
+        "GiftDropId": 1003014,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Floral Headphones Set",
+        "ItemSetId": 5,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003014,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "UcPo9SsF3EGTCBB2J-Efdw,PNH0VNS1qk6nWVecYmVDDQ",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Floral Headphones (Orange)",
+        "GiftDropId": 1003015,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Floral Headphones Set",
+        "ItemSetId": 5,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003015,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "UcPo9SsF3EGTCBB2J-Efdw,sXF1BZr8X06AYnWUrWxy1Q",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Floral Headphones (Lavender)",
+        "GiftDropId": 1003016,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Floral Headphones Set",
+        "ItemSetId": 5,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003016,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "75-HXZBOAEiDBqclnOn8YQ,NMmOn0zQZ0mJLxCMnsbIVw,v1ZOE9G9gEWAqNJX1A9f2A,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Floatie (Watermelon)",
+        "GiftDropId": 1003017,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Poolside Floatie Set",
+        "ItemSetId": 6,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": true,
+      "PurchasableItemId": 1003017,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "EJFGAW-TnUCaeD59parEHg,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Floatie (Flamingo)",
+        "GiftDropId": 1003018,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Poolside Floatie Set",
+        "ItemSetId": 6,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": true,
+      "PurchasableItemId": 1003018,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "EJFGAW-TnUCaeD59parEHg,9WpjdWJbhkCoEgDljqZkdw,Uyn3QOl1zkGR2_OUOhNWjQ,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Floatie (Rubber Ducky)",
+        "GiftDropId": 1003019,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Poolside Floatie Set",
+        "ItemSetId": 6,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": true,
+      "PurchasableItemId": 1003019,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "7a98503f-0460-4d25-a0d5-72a32db8f4c2,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Floatie (Turtle)",
+        "GiftDropId": 1003020,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Poolside Floatie Set",
+        "ItemSetId": 6,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": true,
+      "PurchasableItemId": 1003020,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "UGkQa4atNUe1cE5TN79s4Q,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Floatie (Unicorn)",
+        "GiftDropId": 1003021,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Poolside Floatie Set",
+        "ItemSetId": 6,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": true,
+      "PurchasableItemId": 1003021,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "7a98503f-0460-4d25-a0d5-72a32db8f4c2,A8ht7G1iqEeLvP0SW6SwyQ,QppxPdf550-jT7dK7XrTzw,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Floatie (Penguin)",
+        "GiftDropId": 1003022,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Poolside Floatie Set",
+        "ItemSetId": 6,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": true,
+      "PurchasableItemId": 1003022,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "5accb7dc-90a3-46ee-bad2-8fd1861d50f1,6o6sNWyPoUCcKJBHW0KC9w",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Bandana (Flowers, Yellow)",
+        "GiftDropId": 1003023,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Floral Bandana Set",
+        "ItemSetId": 7,
+        "Rarity": 10,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003023,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 200,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 180,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "5accb7dc-90a3-46ee-bad2-8fd1861d50f1,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Bandana (Flowers, Orange)",
+        "GiftDropId": 1003024,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Floral Bandana Set",
+        "ItemSetId": 7,
+        "Rarity": 10,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003024,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 200,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 180,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "5accb7dc-90a3-46ee-bad2-8fd1861d50f1,827a1538-51bb-4fef-99c1-7f1bebd9866c,27a5df72-4095-4837-bf24-cdd3d95a43e9,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Bandana (Flowers, Red)",
+        "GiftDropId": 1003025,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Floral Bandana Set",
+        "ItemSetId": 7,
+        "Rarity": 10,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003025,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 200,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 180,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "5accb7dc-90a3-46ee-bad2-8fd1861d50f1,X1OFXyDyXES3CgMpIyV3nQ",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Bandana (Flowers, Pink)",
+        "GiftDropId": 1003026,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Floral Bandana Set",
+        "ItemSetId": 7,
+        "Rarity": 10,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003026,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 200,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 180,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "5accb7dc-90a3-46ee-bad2-8fd1861d50f1,Z9H3wUn3_kS6pPehL74aHg,27a5df72-4095-4837-bf24-cdd3d95a43e9,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Bandana (Flowers, Purple)",
+        "GiftDropId": 1003027,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Floral Bandana Set",
+        "ItemSetId": 7,
+        "Rarity": 10,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003027,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 200,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 180,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "5accb7dc-90a3-46ee-bad2-8fd1861d50f1,ad61c418-6d77-4a99-8ac5-9f10f5a3d42f,27a5df72-4095-4837-bf24-cdd3d95a43e9,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Bandana (Flowers, Blue)",
+        "GiftDropId": 1003028,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Floral Bandana Set",
+        "ItemSetId": 7,
+        "Rarity": 10,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003028,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 200,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 180,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "5accb7dc-90a3-46ee-bad2-8fd1861d50f1,40ldoL7MAUKnb5JA68CMBA,27a5df72-4095-4837-bf24-cdd3d95a43e9,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Bandana (Flowers, Green)",
+        "GiftDropId": 1003029,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Floral Bandana Set",
+        "ItemSetId": 7,
+        "Rarity": 10,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003029,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 200,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 180,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "5accb7dc-90a3-46ee-bad2-8fd1861d50f1,6dd95046-acf8-42fe-ab78-80a334096a9d,27a5df72-4095-4837-bf24-cdd3d95a43e9,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Bandana (Flowers, White)",
+        "GiftDropId": 1003030,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Floral Bandana Set",
+        "ItemSetId": 7,
+        "Rarity": 10,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003030,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 200,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 180,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "5accb7dc-90a3-46ee-bad2-8fd1861d50f1,J1bmomo_3Ume0KR2Yh46Uw,27a5df72-4095-4837-bf24-cdd3d95a43e9,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Bandana (Flowers, Black)",
+        "GiftDropId": 1003031,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Floral Bandana Set",
+        "ItemSetId": 7,
+        "Rarity": 10,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003031,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 200,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 180,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "5944a66e-b386-43d9-a4b6-7b4a8e987fd8,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Heart Sunglasses",
+        "GiftDropId": 1003032,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Summer Sunglasses Set",
+        "ItemSetId": 8,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003032,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "767684e7-0eec-4f6e-ad58-3d5ae715206e,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Retro Sunglasses",
+        "GiftDropId": 1003033,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Summer Sunglasses Set",
+        "ItemSetId": 8,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003033,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "6427bd57-fcb2-420f-8b3e-d1da43470b84,0Ytm7G4_lkmZWPA_YfaIeQ,KfM7veOVlE-dNZmsbDNZBA,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Sunglasses (Orange)",
+        "GiftDropId": 1003034,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Summer Sunglasses Set",
+        "ItemSetId": 8,
+        "Rarity": 20,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003034,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 500,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 450,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "exQz9Zr3HEyOR9nDDrimlQ,SmRcrycMZ0qYNsHuQQOORA,S21TW8NwMEWLV9zqHxWfFw,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Plastic Sunglasses (Blue)",
+        "GiftDropId": 1003035,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Summer Sunglasses Set",
+        "ItemSetId": 8,
+        "Rarity": 10,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003035,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 200,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 180,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "exQz9Zr3HEyOR9nDDrimlQ,0svDrGn2NkmhUjC1VJUgRg,S21TW8NwMEWLV9zqHxWfFw,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Plastic Sunglasses (Green)",
+        "GiftDropId": 1003036,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Summer Sunglasses Set",
+        "ItemSetId": 8,
+        "Rarity": 10,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003036,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 200,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 180,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "exQz9Zr3HEyOR9nDDrimlQ,z-yaXP9ImkysLOGuCQiblw,S21TW8NwMEWLV9zqHxWfFw,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Plastic Sunglasses (Red)",
+        "GiftDropId": 1003037,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Summer Sunglasses Set",
+        "ItemSetId": 8,
+        "Rarity": 10,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003037,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 200,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 180,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "41bece0e-9b5d-4151-bf5c-d0e786a803b4,CJKB3OO2CkeEVsAK0jeeDA",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Beanie (Pineapple)",
+        "GiftDropId": 1003038,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Pineapple Set",
+        "ItemSetId": 9,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003038,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "7aa994d2-6499-4918-ab2a-2531c17e27a7,SiraUm3ZaUOCeXCekunJuA",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Pineapple Gamer Dress",
+        "GiftDropId": 1003039,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Pineapple Set",
+        "ItemSetId": 9,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003039,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "7df5697f-2f71-47d1-bc27-cfa43792ffd7,GCethPzUyUKYxWdfLykbSg",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Felted Shawl (Pineapple)",
+        "GiftDropId": 1003040,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Pineapple Set",
+        "ItemSetId": 9,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003040,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "618b979e-c6e6-434e-98e5-9b51e117fb69,mKWQMgBuTEq9EwXBTusuJw",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Tucked Gamer Tee (Pineapple)",
+        "GiftDropId": 1003041,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Pineapple Set",
+        "ItemSetId": 9,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003041,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "2b2eb9e5-d52e-4004-bdb2-0bcf6910992d,rZOgFhv59UKssAH7k-UDyQ,eVl7mLA1VkmnR81YLF-ZNg,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Flower Crown",
+        "GiftDropId": 1003042,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Flower Crown Set",
+        "ItemSetId": 10,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003042,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "2b2eb9e5-d52e-4004-bdb2-0bcf6910992d,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Flower Headband (Pink)",
+        "GiftDropId": 1003043,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Flower Crown Set",
+        "ItemSetId": 10,
+        "Rarity": 30,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003043,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 675,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "2b2eb9e5-d52e-4004-bdb2-0bcf6910992d,c5884778-a87f-4612-9717-86fbb65d440f,7d040391-03f7-4b3d-bcfd-a1278ff459c9,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Flower Headband (Blue)",
+        "GiftDropId": 1003044,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Flower Crown Set",
+        "ItemSetId": 10,
+        "Rarity": 30,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003044,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 675,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "2b2eb9e5-d52e-4004-bdb2-0bcf6910992d,827a1538-51bb-4fef-99c1-7f1bebd9866c,7d040391-03f7-4b3d-bcfd-a1278ff459c9,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Flower Headband (Red)",
+        "GiftDropId": 1003045,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Flower Crown Set",
+        "ItemSetId": 10,
+        "Rarity": 30,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003045,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 675,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "a61e86cd-f7e7-4ac7-a6e8-df269bc5cb01,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Flower Hair Clip (Red)",
+        "GiftDropId": 1003046,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Flower Crown Set",
+        "ItemSetId": 10,
+        "Rarity": 30,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003046,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 675,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "a61e86cd-f7e7-4ac7-a6e8-df269bc5cb01,ce465d53-3807-423f-baa0-bdba2a75ceb3,65b89eae-347e-4eff-9ff3-7f25cace0125,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Flower Hair Clip (White)",
+        "GiftDropId": 1003047,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Flower Crown Set",
+        "ItemSetId": 10,
+        "Rarity": 30,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003047,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 675,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "a61e86cd-f7e7-4ac7-a6e8-df269bc5cb01,596097a8-d545-4256-959d-1d3cd96fc64c,65b89eae-347e-4eff-9ff3-7f25cace0125,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Flower Hair Clip (Yellow)",
+        "GiftDropId": 1003048,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "Flower Crown Set",
+        "ItemSetId": 10,
+        "Rarity": 30,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003048,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 675,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "e149c559-aeb5-4609-9722-52fb6acc70e6,QF05cIuqhEeY8oNnO9CocA",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Floral Athleisure Crop Top",
+        "GiftDropId": 1003049,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "",
+        "ItemSetId": 0,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003049,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "e149c559-aeb5-4609-9722-52fb6acc70e6,FbedbSonT0izB7Q6cLXCzw",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Orange Floral Athleisure Crop Top",
+        "GiftDropId": 1003050,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "",
+        "ItemSetId": 0,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003050,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "e149c559-aeb5-4609-9722-52fb6acc70e6,SoQerU2dOUu9BdRBAsEllA",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Floral Athleisure Crop Top (Purple)",
+        "GiftDropId": 1003051,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "",
+        "ItemSetId": 0,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003051,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "ae180fb1-3e74-4232-9a9d-388fd488eba1,nu_UGtkJOUK-5MWaW83MUg,pgBFpOtl00K2zsTJcfrefQ,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Silly Shorts (Watermelon Rain)",
+        "GiftDropId": 1003052,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "",
+        "ItemSetId": 0,
+        "Rarity": 30,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003052,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 675,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "75-HXZBOAEiDBqclnOn8YQ,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Floatie (Creamsicle)",
+        "GiftDropId": 1003053,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "",
+        "ItemSetId": 0,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003053,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "75-HXZBOAEiDBqclnOn8YQ,LRv1X0ZrjkqO7azGpZ7uMg,sx10-Hsfl0OS62pIFvHH8A,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Floatie (Donut)",
+        "GiftDropId": 1003054,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "",
+        "ItemSetId": 0,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003054,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    },
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "75-HXZBOAEiDBqclnOn8YQ,7BMBl3iA6USKijNCKfCXqA",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Floatie (Neapolitan)",
+        "GiftDropId": 1003055,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "",
+        "ItemSetId": 0,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1003055,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1750,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 1575,
+          "StorefrontSaleData": {
+            "SalePercent": 30,
+            "SaleStartDate": "2026-09-10T21:48:19Z",
+            "SaleEndDate": "2026-10-01T07:00:00Z"
+          },
+          "Type": 0
+        }
+      ]
+    }
+  ],
+  "SubscriberDiscountPercent": 10,
+  "StorefrontType": 2,
+  "NextUpdate": "2026-10-01T07:00:00Z",
+  "NewUntil": null
+}

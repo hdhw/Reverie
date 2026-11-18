@@ -1,0 +1,45 @@
+{
+  "NextUpdate": "2226-06-14T00:12:20.1324853Z",
+  "StoreItems": [
+    {
+      "GiftDrop": {
+        "AvatarItemDesc": "d7410e54-5193-48b9-b5c9-06e4439dd924,0aNp_2sWHUS_08TMe-_AzQ,,",
+        "AvatarItemType": 0,
+        "ConsumableItemDesc": "",
+        "Context": 0,
+        "Currency": 0,
+        "CurrencyType": 0,
+        "EquipmentModificationGuid": "",
+        "EquipmentPrefabName": "",
+        "FriendlyName": "Back Keytar (Purple)*",
+        "GiftDropId": 1001550,
+        "IsQuery": false,
+        "ItemSetFriendlyName": "",
+        "ItemSetId": 0,
+        "Rarity": 50,
+        "SubscribersOnly": false,
+        "Tooltip": "",
+        "Unique": true
+      },
+      "IsFeatured": false,
+      "PurchasableItemId": 1001550,
+      "Type": 0,
+      "Prices": [
+        {
+          "CurrencyType": 2,
+          "Price": 750,
+          "StorefrontSaleData": null,
+          "Type": 0
+        }
+      ],
+      "SubscriberPrices": [
+        {
+          "CurrencyType": 2,
+          "Price": 675,
+          "StorefrontSaleData": null,
+          "Type": 0
+        }
+      ]
+    }
+  ]
+}
