@@ -12,7 +12,7 @@
       "builds": ["20230406", "20230414_prod"],
       "status": "upstream",
       "module": "server (Mocha)",
-      "notes": "Mocha's target client. Players install ReveriePatcher (MelonLoader) and set your server's https address. Sign-up, login, avatar and profile were tested on Reverie with 20230414; entering rooms needs your own Photon App IDs and has not been tested yet."
+      "notes": "Mocha's target client. Players install ReveriePatcher (MelonLoader) and set your server's https address. Sign-up, login, avatar, profile and joining the dorm over Photon were tested on Reverie with 20230414. New servers use a shared Photon app until the host adds their own."
     },
     {
       "id": "2020-2022",

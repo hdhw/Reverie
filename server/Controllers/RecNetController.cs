@@ -385,7 +385,7 @@ namespace Mocha2023.Controllers
                     StatusCodes.Status403Forbidden,
                     new
                     {
-                        error = "This Steam ID has been blocked from Mocha.",
+                        error = "This Steam ID has been blocked from this server.",
                         code = "steam_id_blacklisted"
                     });
             }
@@ -474,7 +474,7 @@ namespace Mocha2023.Controllers
                     StatusCodes.Status403Forbidden,
                     new
                     {
-                        error = "This Steam ID has been blocked from Mocha.",
+                        error = "This Steam ID has been blocked from this server.",
                         code = "steam_id_blacklisted"
                     });
             }

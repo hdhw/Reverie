@@ -1401,7 +1401,7 @@ namespace Mocha2023.Controllers
                 {
                     error = "steam_id_blacklisted",
                     error_description =
-                        "This Steam ID has been blocked from Mocha."
+                        "This Steam ID has been blocked from this server."
                 });
         }
 

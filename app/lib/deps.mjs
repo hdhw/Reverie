@@ -38,11 +38,15 @@ export function postgresBin(cfg) {
 
 export const pgTool = (bin, name) => path.join(bin, name + EXE);
 
-export function portFree(port, host = '0.0.0.0') {
-  return new Promise(resolve => {
-    const s = net.createServer().once('error', () => resolve(false))
-      .once('listening', () => s.close(() => resolve(true))).listen(port, host);
-  });
+const bindable = (port, host) => new Promise(resolve => {
+  const s = net.createServer().once('error', () => resolve(false))
+    .once('listening', () => s.close(() => resolve(true))).listen(port, host);
+});
+
+// Windows lets 0.0.0.0 bind while something holds 127.0.0.1, so the default checks both.
+export async function portFree(port, host) {
+  if (host) return bindable(port, host);
+  return await bindable(port, '127.0.0.1') && await bindable(port, '0.0.0.0');
 }
 
 export function portOpen(port, host = '127.0.0.1', timeout = 1000) {

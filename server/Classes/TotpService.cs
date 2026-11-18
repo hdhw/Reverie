@@ -24,7 +24,7 @@ namespace Mocha2023.Classes
         public static string GetProvisioningUri(
             string secret,
             string accountLabel,
-            string issuer = "Mocha")
+            string issuer = "Reverie")
         {
             string label = Uri.EscapeDataString($"{issuer}:{accountLabel}");
             string issuerEncoded = Uri.EscapeDataString(issuer);

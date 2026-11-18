@@ -61,7 +61,7 @@ namespace Mocha2023.Classes
                 !IsLockdownExemptPath(requestPath) &&
                 !IsDeveloperRequest(request))
             {
-                context.Result = new JsonResult(new { RecNetStatus = "Mocha is currently down." })
+                context.Result = new JsonResult(new { RecNetStatus = "This server is currently down." })
                 {
                     StatusCode = StatusCodes.Status200OK
                 };
@@ -80,7 +80,7 @@ namespace Mocha2023.Classes
                     StatusCodes.Status403Forbidden,
                     "ip_banned",
                     string.IsNullOrWhiteSpace(ipBan?.Reason)
-                        ? "This network is blocked from Mocha."
+                        ? "This network is blocked from this server."
                         : ipBan.Reason);
                 return;
             }
@@ -96,7 +96,7 @@ namespace Mocha2023.Classes
                 context.Result = Error(
                     StatusCodes.Status403Forbidden,
                     "vpn_or_proxy_blocked",
-                    "VPN, proxy, Tor, and hosting-provider connections are not allowed on Mocha.");
+                    "VPN, proxy, Tor, and hosting-provider connections are not allowed on this server.");
                 return;
             }
 

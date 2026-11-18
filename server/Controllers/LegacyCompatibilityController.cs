@@ -32,7 +32,7 @@ namespace Mocha2023.Controllers
             "Your ideal superpower",
             "A game everyone should try",
             "Something that makes you laugh",
-            "Your favorite room in Mocha",
+            "Your favorite room in Rec Room",
             "Best thing that happened this week",
             "A food you could eat forever",
             "Something you are proud of",
@@ -49,8 +49,8 @@ namespace Mocha2023.Controllers
             "Someone who inspires you",
             "Your comfort movie",
             "A weird food combination you like",
-            "Your dream room in Mocha",
-            "Your favorite Mocha activity",
+            "Your dream room in Rec Room",
+            "Your favorite activity here",
             "First game you remember playing",
             "Best advice you ever heard",
             "A harmless unpopular opinion",
@@ -70,7 +70,7 @@ namespace Mocha2023.Controllers
             "A talent you wish you had",
             "The last thing that made you smile",
             "Your perfect breakfast",
-            "A room theme you would create in Mocha",
+            "A room theme you would create in Rec Room",
             "Your favorite outfit",
             "A childhood obsession",
             "The coolest place you have been",
@@ -91,7 +91,7 @@ namespace Mocha2023.Controllers
             "A topic you could discuss for hours",
             "Your dream vehicle",
             "A trend you actually enjoy",
-            "Your favorite thing about Mocha",
+            "Your favorite thing about this server",
             "The first thing you would do on the moon"
         };
 

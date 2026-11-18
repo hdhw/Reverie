@@ -6,6 +6,7 @@ import https from 'node:https';
 import { DATA, TLS_CERT, TLS_PEM, publicUrl } from './config.mjs';
 import { SERVER_DIR, serverCommand, postgresBin, pgTool, portOpen, portFree, dotnetRuntime } from './deps.mjs';
 import { importCatalog, renderGameConfig } from './catalog.mjs';
+import { installContent } from './content.mjs';
 
 const PGDATA = path.join(DATA, 'pgdata');
 const SERVER_PID = path.join(DATA, 'server.pid');
@@ -109,7 +110,7 @@ export class Supervisor extends EventEmitter {
     for (let i = 0; i < 60; i++) {
       created = spawnSync(pgTool(bin, 'createdb'), [d.name], { env: { ...process.env, ...this.dbEnv(cfg) }, encoding: 'utf8', windowsHide: true });
       // After an unclean shutdown the port opens before crash recovery finishes.
-      if (!/starting up|shutting down/.test(created.stderr)) break;
+      if (!/starting up|shutting down|not yet accepting connections/.test(created.stderr)) break;
       await new Promise(r => setTimeout(r, 1000));
     }
     if (created.status !== 0 && !/already exists/.test(created.stderr)) {
@@ -131,6 +132,8 @@ export class Supervisor extends EventEmitter {
 
     for (const w of importCatalog()) this.log('reverie', `Installed ${w.file} (${w.items} entries, ${w.source}).`);
     renderGameConfig(cfg);
+    const images = installContent();
+    if (images.length) this.log('reverie', `Installed ${images.length} room images.`);
 
     try { await this.startDb(); } catch (e) { this.setProblem(e.message); throw e; }
 
@@ -140,6 +143,8 @@ export class Supervisor extends EventEmitter {
       MOCHA_SERVER_URL: `https://0.0.0.0:${cfg.gamePort}`,
       REVERIE_TLS_CERT: TLS_CERT,
       REVERIE_PUBLIC_URL: publicUrl(cfg),
+      REVERIE_PUBLIC_URL_SET: cfg.publicUrl ? '1' : '',
+      REVERIE_SERVER_NAME: cfg.serverName,
       MOCHA_PG_HOST: d.host, MOCHA_PG_PORT: String(d.port), MOCHA_PG_DATABASE: d.name, MOCHA_PG_USER: d.user, MOCHA_PG_PASSWORD: d.password,
       IP_HASH_SECRET: cfg.secrets.ipHash, JWT_SECRET: cfg.secrets.jwt, PHOTON_CUSTOM_AUTH_SECRET: cfg.secrets.photonAuth,
       REVERIE_ADMIN_KEY: cfg.secrets.adminKey,

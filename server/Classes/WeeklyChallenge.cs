@@ -19,7 +19,7 @@ namespace Mocha2023.Classes
         public string RewardModificationGuid { get; set; } = "XpxqrY6RYkafs-sd3Z0ZLw";
         public int RewardXp { get; set; } = 750;
         public int GiftDropId { get; set; } = 52;
-        public string ThemeString { get; set; } = "Mocha Weekly Challenge";
+        public string ThemeString { get; set; } = "Weekly Challenge";
 
         private static string FilePath => Path.Combine(Program.dataDir, "weekly.json");
         private static readonly object Gate = new();

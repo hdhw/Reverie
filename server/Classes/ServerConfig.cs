@@ -8,6 +8,8 @@ namespace Mocha2023.Classes
         public static object Bracket => new List<object>();
 
         public static string BaseURL = Setting("REVERIE_PUBLIC_URL", "http://localhost");
+        public static readonly bool PublicUrlSet = Environment.GetEnvironmentVariable("REVERIE_PUBLIC_URL_SET") == "1";
+        public static readonly string ServerName = Setting("REVERIE_SERVER_NAME", "Reverie");
             public static int GameVersion = 20230414;
 
         public static readonly string PhotonRealtimeAppId = Setting("PHOTON_REALTIME_APP_ID", "");

@@ -64,7 +64,7 @@ export function renderGameConfig(cfg) {
   const publicUrl = hostUrl(cfg);
   const template = JSON.parse(fs.readFileSync(path.join(VENDOR, 'mocha-2023', 'ConfigV2.template.json'), 'utf8'));
   const fill = v => typeof v === 'string'
-    ? v.replaceAll('{{PUBLIC_URL}}', publicUrl).replaceAll('{{MOTD}}', `Welcome to ${cfg.serverName}!`)
+    ? v.replaceAll('{{PUBLIC_URL}}', publicUrl).replaceAll('{{MOTD}}', cfg.motd || `Welcome to ${cfg.serverName}!`)
     : Array.isArray(v) ? v.map(fill)
     : v && typeof v === 'object' ? Object.fromEntries(Object.entries(v).map(([k, x]) => [k, fill(x)])) : v;
   const file = path.join(DATA, 'APIS', 'ConfigV2.json');

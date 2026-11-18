@@ -3553,7 +3553,7 @@ namespace Mocha2023.Controllers
             {
                 Id = 1L,
                 FeaturedRoomGroupId = 1L,
-                Name = "Mocha Featured",
+                Name = ServerConfig.ServerName + " Featured",
                 Rooms = featuredRooms,
                 FeaturedRooms = featuredRooms
             });

@@ -13,6 +13,9 @@ export const TLS_PEM = path.join(DATA, 'tls.pem');
 export const publicUrl = (cfg) => (cfg.publicUrl || `https://localhost:${cfg.gamePort}`).replace(/\/+$/, '');
 export const generateAdminName = () => `Reverie User#${crypto.randomInt(10000, 100000)}`;
 
+// Mocha's own Photon apps, so a new server has working rooms before the host makes their own.
+export const SHARED_PHOTON = { realtimeAppId: '94e5bc5c-d19b-4651-b3c0-e0f7758c17e1', voiceAppId: 'bfa91264-1580-4e63-b355-77404b95e33e', region: 'us' };
+
 function defaults() {
   return {
     setupComplete: false,
@@ -26,7 +29,8 @@ function defaults() {
     autoStart: true,
     database: { mode: 'managed', host: '127.0.0.1', port: 5482, name: 'reverie', user: 'reverie', password: secret() },
     pgBin: '',
-    photon: { realtimeAppId: '', voiceAppId: '', region: 'us' },
+    motd: '',
+    photon: { ...SHARED_PHOTON },
     secrets: { ipHash: secret(), jwt: secret(), photonAuth: secret(), adminKey: secret() },
   };
 }

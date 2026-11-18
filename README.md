@@ -23,9 +23,10 @@ npm run package      # Windows release zip in dist/ (server build + bundled Node
 "Start Reverie.cmd"  # or: npm start
 ```
 
-The app opens in its own window (Edge or Chrome app mode) and walks you through setup:
-administrator name (generated as `Reverie User#12345`, editable), panel password, server name,
-database, ports, Photon App IDs. After setup the same window is the web panel, also reachable from any browser at
+The app opens in its own window (Edge or Chrome app mode). Choose **Automatic setup** and Reverie picks free ports,
+downloads PostgreSQL if needed, starts the server and shows your generated panel password once. Or choose
+**Guided setup** to set the administrator name (generated as `Reverie User#12345`, editable), password, server name,
+database, ports and Photon App IDs yourself. After setup the same window is the web panel, also reachable from any browser at
 `http://127.0.0.1:5481` (or your LAN if you allow it).
 
 On a server with no screen: `npm run headless`. It prints a one-time sign-in link for setup.
@@ -39,11 +40,14 @@ On a server with no screen: `npm run headless`. It prints a one-time sign-in lin
 | `app/lib/supervisor.mjs` | Runs PostgreSQL and the game server, captures logs, explains failures in plain words. |
 | `app/lib/deps.mjs` | Finds .NET, PostgreSQL, free ports; downloads portable PostgreSQL on Windows. |
 | `app/lib/catalog.mjs` | Installs game data into `server/Data` and renders `ConfigV2.json` for this host. |
+| `app/lib/content.mjs` | Room images, loading screens, community board and image uploads for the Customize page. |
 | `app/lib/ops.mjs` | Backups (`pg_dump`/`pg_restore`) and diagnostics. |
 | `app/lib/http.mjs` | Panel API. Player actions run Mocha's own console commands. |
 | `app/ui/` | Wizard and panel (plain HTML/CSS/JS, no build step). |
 | `app/compat/clients.json` | Client-version compatibility table shown in the panel. |
 | `vendor/mocha-2023/` | Mocha's 2023 item catalogs, game configs and the 45 base rooms. Default data source. |
+| `vendor/femrec-2023/` | Room thumbnails and the default profile picture from FemRec-2023 (MIT). |
+| `vendor/client/` | A build of ReveriePatcher, offered for download on the panel's Guide page. |
 | `vendor/rebornrec/` | RebornRec's 2016-2020 catalogs (see its NOTICE). `npm run import-catalog -- --source=rebornrec --force` |
 | `data/` | Your config, secrets, private database and backups. Not in git. Back this folder up. |
 
@@ -59,14 +63,18 @@ No npm dependencies. The app uses only Node built-ins.
 - **Configuration.** Base URL, Photon App IDs, region and app version come from settings instead of Mocha's own values.
 - **Security.** Removed the hardcoded default bot-bridge secret. Added `/reverie/status` and `/reverie/players`
   (loopback only, keyed, constant-time compare) for the panel.
+- **Branding.** Player-facing "Mocha" text uses the host's server name or neutral wording. The default loading screen
+  and community board read "Setup your Reverie server!" until the host changes them on the Customize page.
+- **LAN play.** Without a public address set, the nameserver answers with the address the player connected to.
 - Cloudflared only starts when its binary exists.
 
 ## Client compatibility
 
 Only the April 2023 client (Mocha's target) has a server module. Players install
 [ReveriePatcher](https://github.com/hdhw/ReveriePatcher), a MelonLoader mod, and set your server's address. Tested on
-20230414 against a Reverie build: account creation, login, avatar and profile all work. Entering rooms needs your own
-Photon App IDs and has not been tested yet. 2016-2022 clients are planned. See the Clients page.
+20230414 against a Reverie build: account creation, login, avatar, profile, and joining the dorm over Photon all work.
+New servers use Mocha's shared Photon apps by default, so rooms work out of the box. Every server on them shares their
+player limit, so busy servers should create their own free apps. 2016-2022 clients are planned. See the Clients page.
 
 The game server speaks HTTPS only, because the 2023 client refuses `http://` addresses. On first start it creates a
 self-signed certificate in `data/tls.pfx`. The client mod skips certificate checks, and the panel trusts only that
@@ -74,7 +82,7 @@ certificate (`data/tls.pem`).
 
 ## Next milestones
 
-1. Photon setup and an in-room multiplayer test on 20230414.
+1. A two-player multiplayer test, and a full pass over in-game features (rooms, inventions, community board, chat).
 2. Legacy client module (2016-2020) using RebornRec's data, as a separate server profile.
 3. Panel: room management, announcements, Mocha's feature toggles (account creation, Steam verification, VPN blocking).
 
@@ -82,7 +90,7 @@ certificate (`data/tls.pem`).
 
 ```
 npm run build:dev    # framework-dependent build, faster
-npm test             # unit tests (config, passwords, error explanations)
+npm test             # unit tests (config, passwords, error explanations, content validation)
 REVERIE_DATA=/some/dir npm run headless   # isolated data folder for testing
 ```
 

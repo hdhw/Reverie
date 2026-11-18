@@ -92,7 +92,10 @@ namespace Mocha2023.Controllers
 
         private IActionResult BuildNameServerResponse()
         {
-            string url = ServerConfig.BaseURL.TrimEnd('/');
+            // Without a configured public address, answer with the address the player used, so LAN players work.
+            string url = ServerConfig.PublicUrlSet || !Request.Host.HasValue
+                ? ServerConfig.BaseURL.TrimEnd('/')
+                : $"https://{Request.Host.Value}";
             return Ok(new
             {
                 Accounts = url + "/acc",
@@ -719,7 +722,7 @@ namespace Mocha2023.Controllers
         {
             return Ok(new
             {
-                ServerName = "Mocha",
+                ServerName = ServerConfig.ServerName,
                 GameVersion = ServerConfig.GameVersion,
                 MaintenanceMinutes = 0
             });
@@ -11123,7 +11126,7 @@ namespace Mocha2023.Controllers
                 string fallbackPlayerName =
                     fallbackPlayer?.Player?.Username ??
                     fallbackPlayer?.Player?.DisplayName ??
-                    "Mocha";
+                    ServerConfig.ServerName;
                 string rroRoot = Path.Combine(imageRoot, "RROs");
 
                 if (Directory.Exists(rroRoot))
@@ -11214,18 +11217,10 @@ namespace Mocha2023.Controllers
                 new
                 {
                     ImageName = "RROs/DormRoom.jpg",
-                    Message = "Welcome to Mocha! Meet up with friends and explore community rooms.",
+                    Message = "This server runs on Reverie. Its host can change these loading screens in the Reverie panel, under Customize.",
                     PlatformMask = -1,
                     RoomNames = Array.Empty<string>(),
-                    Title = "Welcome to Mocha"
-                },
-                new
-                {
-                    ImageName = "RROs/RecCenter.jpg",
-                    Message = "Open the People menu to find, friend, and subscribe to other players.",
-                    PlatformMask = -1,
-                    RoomNames = Array.Empty<string>(),
-                    Title = "Play together"
+                    Title = "Setup your Reverie server!"
                 }
             });
         }
