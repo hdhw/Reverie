@@ -17,7 +17,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "creator_inventions",
             idColumn: "invention_id",
             idSelector: value => value.InventionId,
-            extraColumns: new (string, Func<InventionRecord, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<InventionRecord, object?>>)[]
             {
                 ("creator_account_id", value => value.CreatorAccountId),
                 ("room_id", value => value.RoomId),
@@ -29,7 +29,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "creator_invention_cheers",
             idColumn: "id",
             idSelector: value => value.Id,
-            extraColumns: new (string, Func<InventionCheerRecord, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<InventionCheerRecord, object?>>)[]
             {
                 ("invention_id", value => value.InventionId),
                 ("account_id", value => value.AccountId)
@@ -40,7 +40,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "creator_invention_aliases",
             idColumn: "legacy_invention_id",
             idSelector: value => value.LegacyInventionId,
-            extraColumns: new (string, Func<InventionAliasRecord, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<InventionAliasRecord, object?>>)[]
             {
                 ("current_invention_id", value => value.CurrentInventionId)
             });
@@ -50,7 +50,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "creator_invention_purchases",
             idColumn: "id",
             idSelector: value => value.Id,
-            extraColumns: new (string, Func<InventionPurchaseRecord, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<InventionPurchaseRecord, object?>>)[]
             {
                 ("invention_id", value => value.InventionId),
                 ("account_id", value => value.AccountId)
@@ -61,7 +61,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "creator_meetup_codes",
             idColumn: "code",
             idSelector: value => value.Code,
-            extraColumns: new (string, Func<MeetupCodeRecord, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<MeetupCodeRecord, object?>>)[]
             {
                 ("creator_account_id", value => value.CreatorAccountId),
                 ("room_instance_id", value => value.RoomInstanceId),
@@ -73,7 +73,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "creator_cloud_variables",
             idColumn: "id",
             idSelector: value => value.Id,
-            extraColumns: new (string, Func<CloudVariableRecord, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<CloudVariableRecord, object?>>)[]
             {
                 ("room_id", value => value.RoomId),
                 ("account_id", value => value.AccountId),
@@ -85,7 +85,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "creator_room_player_data",
             idColumn: "id",
             idSelector: value => value.Id,
-            extraColumns: new (string, Func<RoomPlayerDataRecord, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<RoomPlayerDataRecord, object?>>)[]
             {
                 ("room_id", value => value.RoomId),
                 ("account_id", value => value.AccountId),

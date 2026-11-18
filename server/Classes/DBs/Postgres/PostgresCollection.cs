@@ -1,3 +1,4 @@
+﻿using System.Linq.Expressions;
 using System.Reflection;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -127,16 +128,52 @@ namespace Mocha2023.Classes.DBs.Postgres
             string connectionString,
             string tableName,
             string idColumn,
-            Func<T, object> idSelector,
-            (string Column, Func<T, object?> Extract)[]? extraColumns = null)
+            Expression<Func<T, object>> idSelector,
+            (string Column, Expression<Func<T, object?>> Extract)[]? extraColumns = null)
         {
             _connectionString = connectionString;
             _tableName = ValidateIdentifier(tableName);
             _idColumn = ValidateIdentifier(idColumn);
-            _idSelector = idSelector;
-            _extraColumns = extraColumns ?? Array.Empty<(string, Func<T, object?>)>();
+            _idSelector = idSelector.Compile();
+            extraColumns ??= Array.Empty<(string, Expression<Func<T, object?>>)>();
+            _extraColumns = extraColumns.Select(c => (c.Column, c.Extract.Compile())).ToArray();
             foreach ((string column, _) in _extraColumns)
                 ValidateIdentifier(column);
+            EnsureTable(SqlType(idSelector), extraColumns.Select(c => (c.Column, SqlType(c.Extract))));
+        }
+
+        // Upstream Mocha's tables were created by hand on its production box; a fresh
+        // Reverie install has an empty database, so derive the DDL from the selectors.
+        private void EnsureTable(string idType, IEnumerable<(string Column, string Type)> extras)
+        {
+            using NpgsqlConnection connection = Open();
+            connection.Execute(
+                $"CREATE TABLE IF NOT EXISTS {_tableName} ({_idColumn} {idType} PRIMARY KEY, data jsonb NOT NULL)");
+            foreach ((string column, string type) in extras)
+                connection.Execute($"ALTER TABLE {_tableName} ADD COLUMN IF NOT EXISTS {column} {type}");
+        }
+
+        private static string SqlType(LambdaExpression selector)
+        {
+            Expression body = selector.Body is UnaryExpression
+            {
+                NodeType: ExpressionType.Convert or ExpressionType.ConvertChecked
+            } convert ? convert.Operand : selector.Body;
+            Type type = Nullable.GetUnderlyingType(body.Type) ?? body.Type;
+            if (type == typeof(Guid)) return "uuid";
+            if (type == typeof(DateTimeOffset)) return "timestamptz";
+            return Type.GetTypeCode(type) switch
+            {
+                TypeCode.Byte or TypeCode.SByte or TypeCode.Int16 or TypeCode.UInt16 or
+                    TypeCode.Int32 or TypeCode.UInt32 or TypeCode.Int64 => "bigint",
+                TypeCode.UInt64 or TypeCode.Decimal => "numeric",
+                TypeCode.Boolean => "boolean",
+                TypeCode.Single or TypeCode.Double => "double precision",
+                TypeCode.DateTime => "timestamp",
+                TypeCode.String or TypeCode.Char => "text",
+                _ => throw new NotSupportedException(
+                    $"No Postgres column type for {type.Name} in {typeof(T).Name}")
+            };
         }
 
         // Boxed ints and boxed longs never compare equal as dictionary keys
@@ -349,13 +386,14 @@ namespace Mocha2023.Classes.DBs.Postgres
         // and this makes NextId() correct no matter how existing rows got
         // their ids (migration, a manual insert, anything), not just ids
         // this sequence itself issued.
-        public long NextId(string sequenceName)
+        public long NextId(string sequenceName, long minimum = 1)
         {
             ValidateIdentifier(sequenceName);
             using NpgsqlConnection connection = Open();
+            connection.Execute($"CREATE SEQUENCE IF NOT EXISTS {sequenceName}");
             connection.Execute(
                 $"SELECT setval('{sequenceName}', " +
-                $"COALESCE((SELECT MAX({_idColumn}) FROM {_tableName}), 0))");
+                $"GREATEST(COALESCE((SELECT MAX({_idColumn}) FROM {_tableName}), 0) + 1, {minimum}), false)");
             return connection.ExecuteScalar<long>($"SELECT nextval('{sequenceName}')");
         }
 

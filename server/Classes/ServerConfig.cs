@@ -7,17 +7,16 @@ namespace Mocha2023.Classes
     {
         public static object Bracket => new List<object>();
 
-        public static string BaseURL = "https://playmocha.xyz";
+        public static string BaseURL = Setting("REVERIE_PUBLIC_URL", "http://localhost");
             public static int GameVersion = 20230414;
 
-            public const string PhotonRealtimeAppId =
-            "94e5bc5c-d19b-4651-b3c0-e0f7758c17e1";
+        public static readonly string PhotonRealtimeAppId = Setting("PHOTON_REALTIME_APP_ID", "");
+        public static readonly string PhotonVoiceAppId = Setting("PHOTON_VOICE_APP_ID", "");
+        public static readonly string PhotonRegion = Setting("PHOTON_REGION", "us");
+        public static readonly string PhotonAppVersion = Setting("PHOTON_APP_VERSION", "20230414_prod");
 
-        public const string PhotonVoiceAppId =
-        "bfa91264-1580-4e63-b355-77404b95e33e";
-
-        public const string PhotonRegion = "us";
-        public const string PhotonAppVersion = "20230414_prod";
+        private static string Setting(string name, string fallback) =>
+            Program.LoadLocalSetting(name) is { Length: > 0 } value ? value : fallback;
 
         public static readonly string PhotonCustomAuthSecret =
         Program.LoadLocalSetting("PHOTON_CUSTOM_AUTH_SECRET");

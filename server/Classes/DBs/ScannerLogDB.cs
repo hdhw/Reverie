@@ -24,7 +24,7 @@ public static class ScannerLogDB
         tableName: "scanner_attempts",
         idColumn: "id",
         idSelector: a => a.Id,
-        extraColumns: new (string, Func<ScannerAttempt, object?>)[]
+        extraColumns: new (string, System.Linq.Expressions.Expression<Func<ScannerAttempt, object?>>)[]
         {
             ("ip_address", a => a.IpAddress)
         });

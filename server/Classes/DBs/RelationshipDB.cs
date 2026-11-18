@@ -14,7 +14,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "relationships",
             idColumn: "id",
             idSelector: r => r.Id,
-            extraColumns: new (string, Func<RelationshipRecord, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<RelationshipRecord, object?>>)[]
             {
                 ("source_player_id", r => r.SourcePlayerId),
                 ("target_player_id", r => r.TargetPlayerId),

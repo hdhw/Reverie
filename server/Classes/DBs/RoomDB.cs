@@ -37,7 +37,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "rooms",
             idColumn: "room_id",
             idSelector: value => value.RoomId,
-            extraColumns: new (string, Func<Room, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<Room, object?>>)[]
             {
                 ("creator_account_id", value => value.CreatorAccountId)
             });
@@ -47,7 +47,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "room_sub_room_data_saves",
             idColumn: "sub_room_data_save_id",
             idSelector: value => value.SubRoomDataSaveId,
-            extraColumns: new (string, Func<SubRoomDataSave, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<SubRoomDataSave, object?>>)[]
             {
                 ("room_id", value => value.RoomId),
                 ("sub_room_id", value => value.SubRoomId)
@@ -58,7 +58,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "room_bans",
             idColumn: "room_ban_id",
             idSelector: value => value.RoomBanId,
-            extraColumns: new (string, Func<RoomBan, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<RoomBan, object?>>)[]
             {
                 ("room_id", value => value.RoomId),
                 ("account_id", value => value.AccountId)

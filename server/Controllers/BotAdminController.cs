@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Mocha2023.Auth;
 using Mocha2023.Classes.DBs;
 using Mocha2023.Classes.DBs.DBClasses;
@@ -15,10 +15,7 @@ namespace Mocha2023.Controllers
 
         private static readonly ConcurrentDictionary<string, LinkCode> LinkCodes = new();
 
-        private const string DefaultSecret = "M0cha-br1dge-7Qv2mZp8Lr4Tn6Ws1Yb5Hd0Ja";
-
-        private static string Secret =>
-            Environment.GetEnvironmentVariable("BOT_ADMIN_SECRET") is { Length: > 0 } s ? s : DefaultSecret;
+        private static string Secret => Environment.GetEnvironmentVariable("BOT_ADMIN_SECRET") ?? "";
 
         private bool BadSecret() =>
             string.IsNullOrEmpty(Secret) ||

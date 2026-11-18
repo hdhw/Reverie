@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Diagnostics;
 
 namespace Mocha2023
@@ -10,6 +10,8 @@ namespace Mocha2023
             try
             {
                 const string cf = "/home/container/cloudflared";
+                if (!File.Exists(cf))
+                    return;
 
                 if (OperatingSystem.IsLinux() || OperatingSystem.IsMacOS())
                 {

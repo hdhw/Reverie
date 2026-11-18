@@ -256,6 +256,8 @@ namespace Mocha2023.Controllers
         private static readonly ConcurrentDictionary<string, HubCallerContext>
             ActiveHubContexts = new(StringComparer.Ordinal);
 
+        internal static ICollection<long> OnlinePlayerIds => PlayerConnections.Keys;
+
         internal static void RegisterHubContext(string connectionId, HubCallerContext context) =>
             ActiveHubContexts[connectionId] = context;
 

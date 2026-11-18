@@ -14,7 +14,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "recnet_photo_cheers",
             idColumn: "id",
             idSelector: value => value.Id,
-            extraColumns: new (string, Func<PhotoCheer, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<PhotoCheer, object?>>)[]
             {
                 ("photo_path", value => value.PhotoPath),
                 ("account_id", value => value.AccountId)
@@ -25,7 +25,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "recnet_photo_comments",
             idColumn: "id",
             idSelector: value => value.Id,
-            extraColumns: new (string, Func<PhotoComment, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<PhotoComment, object?>>)[]
             {
                 ("photo_path", value => value.PhotoPath),
                 ("account_id", value => value.AccountId)
@@ -36,7 +36,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "recnet_saved_images",
             idColumn: "photo_path",
             idSelector: value => value.PhotoPath,
-            extraColumns: new (string, Func<SavedImage, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<SavedImage, object?>>)[]
             {
                 ("account_id", value => value.AccountId),
                 ("image_id", value => value.ImageId),
@@ -50,7 +50,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "recnet_moderation_locks",
             idColumn: "account_id",
             idSelector: value => value.AccountId,
-            extraColumns: new (string, Func<ModerationLock, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<ModerationLock, object?>>)[]
             {
                 ("ban_group_id", value => value.BanGroupId)
             });
@@ -60,7 +60,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "recnet_events",
             idColumn: "id",
             idSelector: value => value.Id,
-            extraColumns: new (string, Func<Event, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<Event, object?>>)[]
             {
                 ("image_name", value => value.ImageName)
             });
@@ -76,7 +76,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "recnet_challenge_progresses",
             idColumn: "id",
             idSelector: value => value.Id,
-            extraColumns: new (string, Func<ChallengeProgress, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<ChallengeProgress, object?>>)[]
             {
                 ("account_id", value => value.AccountId)
             });
@@ -98,7 +98,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "recnet_ip_bans",
             idColumn: "id",
             idSelector: value => value.Id,
-            extraColumns: new (string, Func<IpBan, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<IpBan, object?>>)[]
             {
                 ("network", value => value.Network),
                 ("created_at", value => value.CreatedAt)

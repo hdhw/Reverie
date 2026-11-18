@@ -14,7 +14,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "clubs",
             idColumn: "club_id",
             idSelector: c => c.ClubId,
-            extraColumns: new (string, Func<ClubRecord, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<ClubRecord, object?>>)[]
             {
                 ("creator_account_id", c => c.CreatorAccountId),
                 ("name", c => c.Name),
@@ -26,7 +26,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "club_memberships",
             idColumn: "id",
             idSelector: m => m.Id,
-            extraColumns: new (string, Func<ClubMembershipRecord, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<ClubMembershipRecord, object?>>)[]
             {
                 ("club_id", m => m.ClubId),
                 ("account_id", m => m.AccountId),
@@ -38,7 +38,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "club_home_clubs",
             idColumn: "account_id",
             idSelector: h => h.AccountId,
-            extraColumns: new (string, Func<HomeClubRecord, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<HomeClubRecord, object?>>)[]
             {
                 ("club_id", h => h.ClubId)
             });
@@ -48,7 +48,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "club_announcements",
             idColumn: "announcement_id",
             idSelector: a => a.AnnouncementId,
-            extraColumns: new (string, Func<ClubAnnouncementRecord, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<ClubAnnouncementRecord, object?>>)[]
             {
                 ("club_id", a => a.ClubId)
             });
@@ -58,7 +58,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "club_announcement_reads",
             idColumn: "id",
             idSelector: r => r.Id,
-            extraColumns: new (string, Func<ClubAnnouncementReadRecord, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<ClubAnnouncementReadRecord, object?>>)[]
             {
                 ("club_id", r => r.ClubId)
             });

@@ -234,7 +234,7 @@ namespace Mocha2023.Classes.DBs
 
             var newFullPlayer = new FullPlayer
             {
-                PlayerId = accountId ?? Players.NextId("players_player_id_seq"),
+                PlayerId = accountId ?? Players.NextId("players_player_id_seq", minimum: 2), // 1 is Coach
 
                 PlatformIds = new List<mPlatformID>
                 {

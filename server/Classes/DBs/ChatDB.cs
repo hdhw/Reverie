@@ -17,7 +17,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "chat_threads",
             idColumn: "thread_id",
             idSelector: t => t.ThreadId,
-            extraColumns: new (string, Func<ChatThread, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<ChatThread, object?>>)[]
             {
                 ("updated_at", t => t.UpdatedAt)
             });
@@ -27,7 +27,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "chat_messages",
             idColumn: "message_id",
             idSelector: m => m.MessageId,
-            extraColumns: new (string, Func<ChatMessage, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<ChatMessage, object?>>)[]
             {
                 ("thread_id", m => m.ThreadId),
                 ("created_at", m => m.CreatedAt)
@@ -38,7 +38,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "chat_read_states",
             idColumn: "id",
             idSelector: s => s.Id,
-            extraColumns: new (string, Func<ChatReadState, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<ChatReadState, object?>>)[]
             {
                 ("thread_id", s => s.ThreadId),
                 ("account_id", s => s.AccountId)

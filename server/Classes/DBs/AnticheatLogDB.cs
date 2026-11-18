@@ -23,7 +23,7 @@ public static class AnticheatLogDB
         tableName: "anticheat_entries",
         idColumn: "id",
         idSelector: e => e.Id,
-        extraColumns: new (string, Func<AnticheatEntry, object?>)[]
+        extraColumns: new (string, System.Linq.Expressions.Expression<Func<AnticheatEntry, object?>>)[]
         {
             ("account_id", e => e.AccountId)
         });

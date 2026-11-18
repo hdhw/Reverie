@@ -9,7 +9,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "player_events",
             idColumn: "event_id",
             idSelector: e => e.EventId,
-            extraColumns: new (string, Func<PlayerEvent, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<PlayerEvent, object?>>)[]
             {
                 ("creator_account_id", e => e.CreatorAccountId),
                 ("club_id", e => e.ClubId),
@@ -21,7 +21,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "player_event_responses",
             idColumn: "id",
             idSelector: r => r.Id,
-            extraColumns: new (string, Func<PlayerEventResponse, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<PlayerEventResponse, object?>>)[]
             {
                 ("event_id", r => r.EventId),
                 ("account_id", r => r.AccountId)

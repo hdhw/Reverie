@@ -28,7 +28,7 @@ namespace Mocha2023.Controllers
             tableName: "legacy_leaderboard_stats",
             idColumn: "id",
             idSelector: x => x.Id,
-            extraColumns: new (string, Func<LeaderboardStat, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<LeaderboardStat, object?>>)[]
             {
                 ("room_id", x => x.RoomId),
                 ("stat_channel", x => x.StatChannel),

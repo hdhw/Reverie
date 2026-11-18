@@ -10,7 +10,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "age_verification_requests",
             idColumn: "code",
             idSelector: r => r.Code,
-            extraColumns: new (string, Func<AgeVerificationRequest, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<AgeVerificationRequest, object?>>)[]
             {
                 ("account_id", r => r.AccountId),
                 ("status", r => r.Status)

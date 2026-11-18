@@ -1,0 +1,17 @@
+# Host data: config with secrets, database, backups, window profile
+/data/
+/runtime/
+node_modules/
+
+# Server build output and runtime state
+server/bin/
+server/obj/
+server/publish/
+server/Data/APIS/
+server/Data/Imports/
+server/Data/Debug/
+server/Data/DBs/
+server/Data/DBBackups/
+server/Data/AvatarItemsUnlocked/
+server/Data/announcements.json
+.playwright-mcp/

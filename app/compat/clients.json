@@ -1,0 +1,34 @@
+{
+  "note": "Only one client family runs against a Reverie server today. Statuses change only after a real client has joined, dressed its avatar and entered a room on a Reverie build.",
+  "statuses": {
+    "upstream": "Worked on Mocha's production server. Not yet re-tested on Reverie.",
+    "tested": "Joined and played on a Reverie build.",
+    "planned": "No server module yet."
+  },
+  "clients": [
+    {
+      "id": "2023-april",
+      "era": "2023",
+      "builds": ["20230406", "20230414_prod"],
+      "status": "upstream",
+      "module": "server (Mocha)",
+      "notes": "Mocha's target client. Needs a client mod that points it at your server's address. Multiplayer needs your own Photon App IDs."
+    },
+    {
+      "id": "2020-2022",
+      "era": "2020-2022",
+      "builds": [],
+      "status": "planned",
+      "module": null,
+      "notes": "Mocha's API is 2023-shaped. Earlier builds use different auth and avatar endpoints."
+    },
+    {
+      "id": "2016-2019",
+      "era": "2016-2019",
+      "builds": ["March 10th, 2020 (RebornRec build list)"],
+      "status": "planned",
+      "module": null,
+      "notes": "RebornRec's catalogs (bundled) come from this era, but its server is closed-source, so its API behaviour has to be rebuilt."
+    }
+  ]
+}

@@ -16,7 +16,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "notification_messages",
             idColumn: "id",
             idSelector: m => m.Id,
-            extraColumns: new (string, Func<StoredNotification, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<StoredNotification, object?>>)[]
             {
                 ("recipient_player_id", m => m.RecipientPlayerId),
                 ("created_at", m => m.CreatedAt),
@@ -27,7 +27,7 @@ namespace Mocha2023.Classes.DBs
             tableName: "notification_room_invite_grants",
             idColumn: "message_id",
             idSelector: g => g.MessageId,
-            extraColumns: new (string, Func<StoredRoomInviteGrant, object?>)[]
+            extraColumns: new (string, System.Linq.Expressions.Expression<Func<StoredRoomInviteGrant, object?>>)[]
             {
                 ("recipient_player_id", g => g.RecipientPlayerId),
                 ("room_instance_id", g => g.RoomInstanceId),

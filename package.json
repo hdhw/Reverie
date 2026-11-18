@@ -1,0 +1,16 @@
+{
+  "name": "reverie",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Self-hosted Rec Room revival server, built on Mocha.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node app/main.mjs",
+    "headless": "node app/main.mjs --no-window",
+    "build": "dotnet publish server/Mocha2023.csproj -c Release -o server/publish --self-contained -p:PublishSingleFile=false",
+    "build:dev": "dotnet build server/Mocha2023.csproj -c Release",
+    "import-catalog": "node app/lib/catalog.mjs",
+    "test": "node --test app/test/*.test.mjs"
+  }
+}
