@@ -652,6 +652,11 @@ namespace Mocha2023
             builder.WebHost.ConfigureKestrel(options =>
             {
                 options.AddServerHeader = false;
+                var reverieCert = ReverieTls.Load();
+                if (reverieCert != null)
+                {
+                    options.ConfigureHttpsDefaults(https => https.ServerCertificate = reverieCert);
+                }
                 options.Limits.MaxRequestBodySize = 4 * 1024 * 1024;
                 options.Limits.MaxRequestHeadersTotalSize = 32 * 1024;
                 options.Limits.MaxRequestHeaderCount = 100;

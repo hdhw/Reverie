@@ -63,15 +63,18 @@ No npm dependencies. The app uses only Node built-ins.
 
 ## Client compatibility
 
-Only the April 2023 client (Mocha's target) has a server module. Its status is "worked on Mocha, not yet
-re-tested on Reverie". Players need the Mocha client patch: the server rejects clients without its
-`X-Mocha-Build` header, and the patch currently points at `playmocha.xyz`, so a Reverie build of the patch
-with a configurable address is required before anyone can join. That work lives in
-[ReveriePatcher](https://github.com/hdhw/ReveriePatcher). 2016-2022 clients are planned. See the Clients page.
+Only the April 2023 client (Mocha's target) has a server module. Players install
+[ReveriePatcher](https://github.com/hdhw/ReveriePatcher), a MelonLoader mod, and set your server's address. Tested on
+20230414 against a Reverie build: account creation, login, avatar and profile all work. Entering rooms needs your own
+Photon App IDs and has not been tested yet. 2016-2022 clients are planned. See the Clients page.
+
+The game server speaks HTTPS only, because the 2023 client refuses `http://` addresses. On first start it creates a
+self-signed certificate in `data/tls.pfx`. The client mod skips certificate checks, and the panel trusts only that
+certificate (`data/tls.pem`).
 
 ## Next milestones
 
-1. Client patch with a configurable server address (ReveriePatcher), plus an in-game join test.
+1. Photon setup and an in-room multiplayer test on 20230414.
 2. Legacy client module (2016-2020) using RebornRec's data, as a separate server profile.
 3. Panel: room management, announcements, Mocha's feature toggles (account creation, Steam verification, VPN blocking).
 

@@ -2,7 +2,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { EventEmitter } from 'node:events';
 import { spawn, spawnSync } from 'node:child_process';
-import { DATA } from './config.mjs';
+import https from 'node:https';
+import { DATA, TLS_CERT, TLS_PEM, publicUrl } from './config.mjs';
 import { SERVER_DIR, serverCommand, postgresBin, pgTool, portOpen, portFree, dotnetRuntime } from './deps.mjs';
 import { importCatalog, renderGameConfig } from './catalog.mjs';
 
@@ -136,8 +137,9 @@ export class Supervisor extends EventEmitter {
     const d = cfg.database;
     const env = {
       ...process.env,
-      MOCHA_SERVER_URL: `http://0.0.0.0:${cfg.gamePort}`,
-      REVERIE_PUBLIC_URL: cfg.publicUrl || `http://localhost:${cfg.gamePort}`,
+      MOCHA_SERVER_URL: `https://0.0.0.0:${cfg.gamePort}`,
+      REVERIE_TLS_CERT: TLS_CERT,
+      REVERIE_PUBLIC_URL: publicUrl(cfg),
       MOCHA_PG_HOST: d.host, MOCHA_PG_PORT: String(d.port), MOCHA_PG_DATABASE: d.name, MOCHA_PG_USER: d.user, MOCHA_PG_PASSWORD: d.password,
       IP_HASH_SECRET: cfg.secrets.ipHash, JWT_SECRET: cfg.secrets.jwt, PHOTON_CUSTOM_AUTH_SECRET: cfg.secrets.photonAuth,
       REVERIE_ADMIN_KEY: cfg.secrets.adminKey,
@@ -205,9 +207,17 @@ export class Supervisor extends EventEmitter {
   async api(pathname) {
     const cfg = this.getConfig();
     if (this.game.state !== 'running') return null;
-    const res = await fetch(`http://127.0.0.1:${cfg.gamePort}/reverie/${pathname}`, { headers: { 'X-Reverie-Key': cfg.secrets.adminKey }, signal: AbortSignal.timeout(4000) });
-    if (!res.ok) throw new Error(`Server answered ${res.status}`);
-    return res.json();
+    return new Promise((resolve, reject) => {
+      const req = https.get({ host: '127.0.0.1', port: cfg.gamePort, path: `/reverie/${pathname}`, ca: fs.readFileSync(TLS_PEM), headers: { 'X-Reverie-Key': cfg.secrets.adminKey }, timeout: 4000 }, (res) => {
+        let body = '';
+        res.setEncoding('utf8').on('data', (c) => { body += c; }).on('end', () => {
+          if (res.statusCode !== 200) return reject(new Error(`Server answered ${res.statusCode}`));
+          try { resolve(JSON.parse(body)); } catch (e) { reject(e); }
+        });
+      });
+      req.on('timeout', () => req.destroy(new Error('Server did not answer in time')));
+      req.on('error', reject);
+    });
   }
 
   snapshot() {

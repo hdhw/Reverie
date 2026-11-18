@@ -1,6 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { ROOT } from './config.mjs';
+import { ROOT, publicUrl as hostUrl } from './config.mjs';
 import { SERVER_DIR } from './deps.mjs';
 
 const VENDOR = path.join(ROOT, 'vendor');
@@ -61,7 +61,7 @@ export function importCatalog({ source = 'mocha-2023', force = false } = {}) {
 
 // Rewritten every start so the client always gets this host's address and name.
 export function renderGameConfig(cfg) {
-  const publicUrl = (cfg.publicUrl || `http://localhost:${cfg.gamePort}`).replace(/\/+$/, '');
+  const publicUrl = hostUrl(cfg);
   const template = JSON.parse(fs.readFileSync(path.join(VENDOR, 'mocha-2023', 'ConfigV2.template.json'), 'utf8'));
   const fill = v => typeof v === 'string'
     ? v.replaceAll('{{PUBLIC_URL}}', publicUrl).replaceAll('{{MOTD}}', `Welcome to ${cfg.serverName}!`)

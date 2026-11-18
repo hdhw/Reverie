@@ -315,7 +315,7 @@ function overview(main) {
     <div id="problem"></div>
     <div class="stats" id="stats"></div>
     <dl class="addresses">
-      <dt>Game server address</dt><dd><code>${esc(cfg.publicUrl || `http://<this computer's IP>:${cfg.gamePort}`)}</code></dd>
+      <dt>Game server address</dt><dd><code>${esc(cfg.publicUrl || `https://<this computer's IP>:${cfg.gamePort}`)}</code></dd>
       <dt>Web panel</dt><dd><code>http://${cfg.panelLan ? '<this computer\'s IP>' : '127.0.0.1'}:${cfg.panelPort}</code></dd>
       <dt>Database</dt><dd id="dbstate">...</dd>
     </dl>

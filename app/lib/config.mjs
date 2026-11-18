@@ -8,6 +8,9 @@ const FILE = path.join(DATA, 'config.json');
 
 const secret = () => crypto.randomBytes(32).toString('base64url');
 
+export const TLS_CERT = path.join(DATA, 'tls.pfx');
+export const TLS_PEM = path.join(DATA, 'tls.pem');
+export const publicUrl = (cfg) => (cfg.publicUrl || `https://localhost:${cfg.gamePort}`).replace(/\/+$/, '');
 export const generateAdminName = () => `Reverie User#${crypto.randomInt(10000, 100000)}`;
 
 function defaults() {

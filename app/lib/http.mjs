@@ -2,7 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import http from 'node:http';
 import crypto from 'node:crypto';
-import { save, validate, hashPassword, verifyPassword, generateAdminName, ROOT } from './config.mjs';
+import { save, validate, hashPassword, verifyPassword, generateAdminName, publicUrl, ROOT } from './config.mjs';
 import { dotnetRuntime, postgresBin, serverCommand, downloadPostgres } from './deps.mjs';
 import { catalogStatus } from './catalog.mjs';
 import { diagnostics, listBackups, createBackup, restoreBackup } from './ops.mjs';
@@ -70,7 +70,7 @@ export function createPanel(ctx) {
       publicUrl: c.publicUrl, autoStart: c.autoStart, pgBin: c.pgBin,
       database: { ...c.database, password: c.database.mode === 'external' ? (c.database.password ? '********' : '') : undefined },
       photon: c.photon,
-      photonAuth: { url: `${(c.publicUrl || `http://localhost:${c.gamePort}`).replace(/\/$/, '')}/photon/authenticate`, secret: c.secrets.photonAuth },
+      photonAuth: { url: `${publicUrl(c)}/photon/authenticate`, secret: c.secrets.photonAuth },
     };
   };
 
