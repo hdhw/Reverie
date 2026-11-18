@@ -4,15 +4,22 @@ Self-hosted Rec Room revival server. Download it, open it, set it up, run your s
 
 Reverie wraps the [Mocha](https://github.com/hdhw/Mocha) server (a 2023 Rec Room server, itself based on
 [FemRec-2023](https://github.com/nito9999/FemRec-2023) by nito9999, MIT) with a desktop app, a setup wizard,
-a managed database and a browser panel.
+a managed database and a browser panel. Inspired by [RebornRec](https://github.com/aqquad/RebornRec), whose 2016-2020
+catalogs are included as an alternative data set. The goal is to support Rec Room clients from 2016 to 2023.
 
 ## Running it
+
+Release zip (Windows): unzip `reverie-<version>-win-x64.zip` and open `Start Reverie.cmd`. It ships Node.js and a
+self-contained server build, so nothing else needs installing; the wizard downloads PostgreSQL if you don't have it.
+
+From source:
 
 Requirements: Windows 10/11 (Linux/macOS paths exist but are untested), [Node.js 20+](https://nodejs.org), and either the
 .NET 8 SDK (to build) or a release build. PostgreSQL is found automatically or downloaded by the wizard.
 
 ```
 npm run build        # self-contained server build (no .NET needed to run it)
+npm run package      # Windows release zip in dist/ (server build + bundled Node)
 "Start Reverie.cmd"  # or: npm start
 ```
 
@@ -59,14 +66,14 @@ No npm dependencies. The app uses only Node built-ins.
 Only the April 2023 client (Mocha's target) has a server module. Its status is "worked on Mocha, not yet
 re-tested on Reverie". Players need the Mocha client patch: the server rejects clients without its
 `X-Mocha-Build` header, and the patch currently points at `playmocha.xyz`, so a Reverie build of the patch
-with a configurable address is required before anyone can join. 2016-2022 clients are planned. See the Clients page.
+with a configurable address is required before anyone can join. That work lives in
+[ReveriePatcher](https://github.com/hdhw/ReveriePatcher). 2016-2022 clients are planned. See the Clients page.
 
 ## Next milestones
 
-1. Client patch with a configurable server address (built from MochaPatches), plus an in-game join test.
-2. Release packaging: zip with `server/publish`, a bundled Node runtime and a launcher exe.
-3. Legacy client module (2016-2020) using RebornRec's data, as a separate server profile.
-4. Panel: room management, announcements, Mocha's feature toggles (account creation, Steam verification, VPN blocking).
+1. Client patch with a configurable server address (ReveriePatcher), plus an in-game join test.
+2. Legacy client module (2016-2020) using RebornRec's data, as a separate server profile.
+3. Panel: room management, announcements, Mocha's feature toggles (account creation, Steam verification, VPN blocking).
 
 ## Development
 

@@ -15,3 +15,5 @@ server/Data/DBBackups/
 server/Data/AvatarItemsUnlocked/
 server/Data/announcements.json
 .playwright-mcp/
+/dist/
+/node/
