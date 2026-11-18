@@ -65,6 +65,11 @@ No npm dependencies. The app uses only Node built-ins.
   (loopback only, keyed, constant-time compare) for the panel.
 - **Branding.** Player-facing "Mocha" text uses the host's server name or neutral wording. The default loading screen
   and community board read "Setup your Reverie server!" until the host changes them on the Customize page.
+- **Events.** Mocha's player-event endpoints answered in shapes the client doesn't read (its own field names, an object
+  where the feed expects a list, search that always came back empty), so events never appeared. `ReverieEventsController`
+  replaces them using the field names and response shapes the 2023 client expects, checked against
+  [RecFlare](https://github.com/recflare/server)'s documented API (MIT). Clubs gained the `join`, `leave` and
+  clear-home-club routes the client also calls.
 - **LAN play.** Without a public address set, the nameserver answers with the address the player connected to.
 - Cloudflared only starts when its binary exists.
 

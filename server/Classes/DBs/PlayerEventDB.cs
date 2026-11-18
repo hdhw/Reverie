@@ -110,6 +110,11 @@ namespace Mocha2023.Classes.DBs
 
         public static PlayerEvent? Get(long eventId) => Events.FindById(eventId);
 
+        public static List<PlayerEvent> GetAll() => Events.FindAll();
+
+        public static List<PlayerEventResponse> GetResponsesByAccount(long accountId) =>
+            Responses.Find(value => value.AccountId == accountId).ToList();
+
         public static List<PlayerEvent> GetByIds(IEnumerable<long> ids)
         {
             var idSet = ids.ToHashSet();

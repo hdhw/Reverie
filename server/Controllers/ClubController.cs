@@ -187,6 +187,17 @@ namespace Mocha2023.Controllers
             return Ok(new { success = true, ClubId = clubId });
         }
 
+        [HttpDelete("home/me")]
+        [HttpDelete("home")]
+        public IActionResult ClearMyHomeClub()
+        {
+            long? accountId = AuthStuff.GetPlayerId(Request);
+            if (!accountId.HasValue)
+                return Unauthorized();
+            ClubDB.SetHomeClub(accountId.Value, null);
+            return Ok(new { success = true });
+        }
+
         [HttpGet("categoryTags")]
         public IActionResult GetCategoryTags() => Ok(ClubDB.CategoryTags);
 
@@ -492,6 +503,7 @@ namespace Mocha2023.Controllers
             });
         }
 
+        [HttpPost("{clubId:long}/join")]
         [HttpPost("{clubId:long}/members/directJoin")]
         [HttpPut("{clubId:long}/members/directJoin")]
         public IActionResult DirectJoin(long clubId)
@@ -635,6 +647,7 @@ namespace Mocha2023.Controllers
             return Ok(new { success = true });
         }
 
+        [HttpPost("{clubId:long}/leave")]
         [HttpPost("{clubId:long}/members/leave")]
         [HttpPut("{clubId:long}/members/leave")]
         public IActionResult LeaveClub(long clubId)
