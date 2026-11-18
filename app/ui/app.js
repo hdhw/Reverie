@@ -52,6 +52,7 @@ async function boot() {
   try {
     cfg = await api('/api/config');
   } catch {
+    window.onhashchange = null;
     const hello = await fetch('/api/hello').then(r => r.json());
     return hello.setupComplete ? signIn(hello) : notAllowed();
   }
@@ -64,18 +65,18 @@ async function boot() {
 }
 
 function notAllowed() {
-  root.innerHTML = `<div class="signin"><div><div class="brand"><img src="/mark.svg" alt="">Reverie</div>
-    <h2>Finish setup on the host computer</h2><p class="muted">Setup has to be done from the Reverie window on the computer running the server.</p></div></div>`;
+  root.innerHTML = `<main class="signin"><div><div class="brand"><img src="/mark.svg" alt="">Reverie</div>
+    <h2>Finish setup on the host computer</h2><p class="muted">Setup has to be done from the Reverie window on the computer running the server.</p></div></main>`;
 }
 
 function signIn(hello) {
-  root.innerHTML = `<div class="signin"><form>
+  root.innerHTML = `<main class="signin"><form>
     <div class="brand"><img src="/mark.svg" alt="">Reverie</div>
     <h2>Sign in to ${esc(hello.serverName)}</h2>
     <div class="field"><label for="u">Administrator name</label><input id="u" type="text" autocomplete="username" required></div>
     <div class="field"><label for="p">Password</label><input id="p" type="password" autocomplete="current-password" required></div>
     <p class="error-text hidden" id="err"></p>
-    <button class="primary" type="submit">Sign in</button></form></div>`;
+    <button class="primary" type="submit">Sign in</button></form></main>`;
   $('form').onsubmit = async e => {
     e.preventDefault();
     try { await api('/api/login', { username: $('#u').value, password: $('#p').value }); boot(); }
@@ -92,7 +93,7 @@ function wizard() {
   root.innerHTML = `<div class="wizard">
     <aside class="steps"><div class="brand"><img src="/mark.svg" alt="">Reverie</div>
       <ol>${STEPS.map((s, i) => `<li class="${done(i)}" ${i === step ? 'aria-current="step"' : ''}>${s}</li>`).join('')}</ol></aside>
-    <section class="stage"></section></div>`;
+    <main class="stage"></main></div>`;
   const stage = $('.stage');
   const go = n => { step = Math.max(0, Math.min(STEPS.length - 1, n)); sessionStorage.setItem('reverie-step', step); wizard(); };
   const nav = (nextLabel = 'Continue', back = true) =>
@@ -290,10 +291,10 @@ async function databaseStep(stage, form, nav, saveCfg) {
 function autoSetup(resume) {
   root.innerHTML = `<div class="wizard">
     <aside class="steps"><div class="brand"><img src="/mark.svg" alt="">Reverie</div><p class="muted aside-note">Automatic setup</p></aside>
-    <section class="stage"><h1>Setting up your server</h1>
+    <main class="stage"><h1>Setting up your server</h1>
       <p class="lede">Nothing here needs you. If PostgreSQL has to be downloaded, this takes a few minutes.</p>
       <ul class="checks" id="auto"><li class="empty">Starting...</li></ul>
-      <div id="end"></div></section></div>`;
+      <div id="end"></div></main></div>`;
   const icon = { done: ['ok', '✓'], failed: ['fail', '✕'], running: ['warn', '…'] };
   const poll = async () => {
     const job = await api('/api/setup/auto').catch(e => ({ error: e.message, steps: [] }));
@@ -351,22 +352,29 @@ const LINES = {
 };
 
 function overview(main) {
-  main.innerHTML = `<p class="muted">${esc(cfg.serverName)}</p>
-    <h1 class="status-line" data-state="stopped"><span class="dot"></span><span id="line">...</span></h1>
-    <div class="row" id="controls"></div>
+  main.innerHTML = `<header class="sky" data-state="stopped">
+      <p class="server-name">${esc(cfg.serverName)}</p>
+      <h1 class="status-line" data-state="stopped"><span class="dot" aria-hidden="true"></span><span id="line">Checking on your server...</span></h1>
+      <div class="row" id="controls"></div>
+    </header>
     <div id="problem"></div>
     <div class="stats" id="stats"></div>
     <dl class="addresses">
-      <dt>Game server address</dt><dd><code>${esc(cfg.publicUrl || `https://<this computer's IP>:${cfg.gamePort}`)}</code></dd>
+      <dt>Game server address</dt><dd id="gameaddr"><code>${esc(cfg.publicUrl || `https://127.0.0.1:${cfg.gamePort}`)}</code></dd>
       <dt>Web panel</dt><dd><code>http://${cfg.panelLan ? '<this computer\'s IP>' : '127.0.0.1'}:${cfg.panelPort}</code></dd>
       <dt>Database</dt><dd id="dbstate">...</dd>
     </dl>
     <h2>Recent activity</h2><div class="log short" id="log"></div>`;
+  if (!cfg.publicUrl) api('/api/invite').then(inv => {
+    const home = inv.lan.find(a => a.kind === 'main') ?? inv.lan[0];
+    if (home) $('#gameaddr').innerHTML = `<code>${esc(home.url)}</code> <span class="muted">on your home network. <a href="#guide">Other addresses</a></span>`;
+  }).catch(() => {});
   let since = 0, last = '';
   every(2000, async () => {
     const o = await api('/api/overview').catch(() => null);
     if (!o) return;
     $('.status-line').dataset.state = o.server;
+    $('.sky').dataset.state = o.server;
     $('#line').textContent = LINES[o.server] ?? o.server;
     if (last !== o.server) {
       last = o.server;
@@ -621,11 +629,11 @@ async function customize(main) {
         <div class="row"><select data-i="${i}" data-k="ImageName" aria-label="Image">${images.map(n => `<option ${n === x.ImageName ? 'selected' : ''}>${esc(n)}</option>`).join('')}</select>
           ${screens.length > 1 ? `<button class="danger" data-remove="${i}">Remove</button>` : ''}</div>
       </div></article>`).join('');
-    $('[data-k]').forEach(el => el.oninput = el.onchange = () => {
+    $$('[data-k]').forEach(el => el.oninput = el.onchange = () => {
       screens[el.dataset.i][el.dataset.k] = el.value;
       if (el.dataset.k === 'ImageName') draw();
     });
-    $('[data-remove]').forEach(b => b.onclick = () => { screens.splice(Number(b.dataset.remove), 1); draw(); });
+    $$('[data-remove]').forEach(b => b.onclick = () => { screens.splice(Number(b.dataset.remove), 1); draw(); });
   };
   draw();
   $('#add').onclick = () => { screens.push({ ImageName: images[0], Title: '', Message: '' }); draw(); };
